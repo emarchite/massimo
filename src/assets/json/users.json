@@ -3,18 +3,22 @@
         "first_name":"Paco",
         "last_name":"Ruiz",
         "username":"PacoRuiz",
-        "email":"paco@paco.es"
+        "email":"paco@paco.es",
+        "password": "123"
     },
     {
         "first_name":"Pepe",
         "last_name":"Sanchez",
         "username":"PepeSanchez",
-        "email":"pepe@pepe.es"
+        "email":"pepe@pepe.es",
+        "password": "123"
+        
     },
     {
         "first_name":"lolo",
         "last_name":"Garcia",
-        "username":"LoloGarcia",
-        "email":"lolo@lolo.es"
+        "username":"test",
+        "email":"lolo@lolo.es",
+        "password": "test"
     }
 ]
