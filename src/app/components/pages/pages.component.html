@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="pages div col-md-4" *ngFor="let page of dataPages">
+            <div class="panel-heading">
+                <img src="https://starwars-visualguide.com/assets/img/categories/{{page.title}}.jpg" onError="this.src='assets/img/errorImg_x3.svg'" />
+                <h3 class="panel-title">{{page.title}}</h3>
+                <!-- <p>{{page.url}}</p> -->
+            </div>
+            <!-- <div class="panel-body text-center color">
+                <img [src]="getStarshipId(ships.url)" onError="this.src='assets/img/errorImg_x3.svg'" class="imgSize">
+            </div> -->
+        </div>
+    </div>
+</div>
