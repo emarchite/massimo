@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-principal',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrincipalComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+    (localStorage.getItem('usuario') == null) ? this.router.navigate(['']) : null;
+    console.log(localStorage.getItem('usuario'));
   }
 
 }

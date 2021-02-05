@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
       username: [ '', [Validators.required, Validators.minLength(3)]],
       password: [ '', [Validators.required, Validators.minLength(3)]]
     });
-    (localStorage.getItem('usuario') != undefined) ? this.router.navigate(['/principal/ships']) : null;
+    (localStorage.getItem('usuario') != null) ? this.router.navigate(['/principal/ships']) : null;
   }
   
   loginUser() {
@@ -55,7 +55,7 @@ export class LoginComponent implements OnInit {
           (obj.username == this.loginForm.value.username && obj.password == this.loginForm.value.password) ? localStorage.setItem('usuario', this.loginForm.value.username) : null;
         });
 
-        (localStorage.getItem('usuario') != undefined) ? this.router.navigate(['/principal/ships']) : this.unregistered = true;
+        (localStorage.getItem('usuario') == null) ? this.unregistered = true : this.router.navigate(['/principal/ships']);
 
       },
       err => {
