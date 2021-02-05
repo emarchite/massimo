@@ -6,6 +6,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
 // Components
 import { ShipsComponent } from '../ships/ships.component';
 import { PageOneComponent } from '../page-one/page-one.component';
+import { PagesComponent } from '../pages/pages.component';
 import { PageTwoComponent } from '../page-two/page-two.component';
 import { ShipsDetailsComponent } from '../ships/ships-details/ships-details.component';
 
@@ -14,7 +15,8 @@ import { ShipsDetailsComponent } from '../ships/ships-details/ships-details.comp
     ShipsComponent,
     ShipsDetailsComponent,
     PageOneComponent,
-    PageTwoComponent
+    PageTwoComponent,
+    PagesComponent
   ],
   imports: [
     CommonModule,

@@ -5,6 +5,7 @@ import { PageOneComponent } from '../page-one/page-one.component';
 import { PageTwoComponent } from '../page-two/page-two.component';
 import { PrincipalComponent } from './principal.component';
 import { LogoutComponent } from '../logout/logout.component';
+import { PagesComponent } from '../pages/pages.component';
 
 const routes: Routes = [
   { 
@@ -14,6 +15,7 @@ const routes: Routes = [
     { path: 'pageOne', component: PageOneComponent },
     { path: 'pageTwo', component: PageTwoComponent },
     { path: 'logout', component: LogoutComponent },
+    { path: 'pages', component: PagesComponent },
   ] }
 ];
 

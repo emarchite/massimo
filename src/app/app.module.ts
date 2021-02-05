@@ -10,10 +10,10 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { PrincipalComponent } from './components/principal/principal.component';
+import { LogoutComponent } from './components/logout/logout.component';
 
 // Services
 import { LoginService } from './services/login/login.service';
-import { LogoutComponent } from './components/logout/logout.component';
 
 
 @NgModule({
