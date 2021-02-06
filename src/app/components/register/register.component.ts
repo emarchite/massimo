@@ -52,7 +52,7 @@ export class RegisterComponent implements OnInit {
     // **********          CASO con API de terceros      *****************
     this._registerService.addUser(this.user).subscribe(
       response => {
-        console.log(response);
+        // console.log(response);
         this.msg = (response.token) ? "Usuario creado correctamente." : null
 
         // ***********    2 opciones: limpiar formulario o hacer login y redireccionar al dashboard      *********

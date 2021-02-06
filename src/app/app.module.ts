@@ -14,6 +14,8 @@ import { LogoutComponent } from './components/logout/logout.component';
 
 // Services
 import { LoginService } from './services/login/login.service';
+import { SpeciesComponent } from './components/species/species.component';
+import { SpeciesDetailsComponent } from './components/species/species-details/species-details.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { LoginService } from './services/login/login.service';
     LoginComponent,
     RegisterComponent,
     PrincipalComponent,
-    LogoutComponent
+    LogoutComponent,
+    SpeciesComponent,
+    SpeciesDetailsComponent
   ],
   imports: [
     BrowserModule,

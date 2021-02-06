@@ -23,11 +23,8 @@ export class PagesComponent implements OnInit {
       let aux = [];
       this.dataPages.forEach((item, index) => {
         aux[index] = { "title": item[0], "url": item[1]}
-      });
-
-
+      })
       this.dataPages = aux;
-      console.log(this.dataPages);
     })
 
   }

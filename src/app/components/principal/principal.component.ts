@@ -15,7 +15,7 @@ export class PrincipalComponent implements OnInit {
 
   ngOnInit(): void {
     (localStorage.getItem('usuario') == null) ? this.router.navigate(['']) : null;
-    console.log(localStorage.getItem('usuario'));
+    // console.log(localStorage.getItem('usuario'));
   }
 
 }

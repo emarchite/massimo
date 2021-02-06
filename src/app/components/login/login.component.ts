@@ -48,28 +48,21 @@ export class LoginComponent implements OnInit {
       datosLogin => {
 
         this.dataLoading = false;
-        // console.log(datosLogin);
 
-
+        // Recorremos el array en busca de un usuario con los mismos credenciales que los introducidos
         datosLogin.forEach(obj => {
           (obj.username == this.loginForm.value.username && obj.password == this.loginForm.value.password) ? localStorage.setItem('usuario', this.loginForm.value.username) : null;
         });
 
-        (localStorage.getItem('usuario') == null) ? this.unregistered = true : this.router.navigate(['/principal/ships']);
+        // Le redireccionamos al dashboard
+        (localStorage.getItem('usuario') == null) ? this.unregistered = true : this.router.navigate(['/principal/pages']);
 
       },
       err => {
+        // En caso de error paramos el preloading
         this.dataLoading = false;
-        console.log(err);
       }
     );
-
-
-    // if (filterJson.length > 0) {
-    //   this.router.navigate(['/principal/ships'])
-    // } else {
-    //   this.unregistered = true;
-    // }
 
   }
 }
