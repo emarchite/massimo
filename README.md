@@ -24,6 +24,13 @@
 6.  Añade imágenes a las CARDS de naves: Puedes usar esta api  'https://starwars-visualguide.com/assets/img/starships/' + ID_DE NAVE -->  https://starwars-visualguide.com/assets/img/starships/5.jpg
 7.  Suponiendo que esta página tiene un numero elevado de usuarios simultáneos, implementa las mejoras que consideres oportunas para evitar la saturación del servidor.
     1.  Si alguna de las medidas no es de código, comentalas a continuación en este Readme.
+        Para la optima carga de nuestro aplicación web podemos realizar la siguientes operaciones:
+        - Alojamiento en un CDN.
+        - Imágenes optiminzadas.
+        - Archivos minificados.
+        - Tener un hosting flexible y escalable en cuanto a recursos para si en un momento dado hay un gran número de peticiones
+        - Sistema de caches, ya sea a través de angular o en el CDN
+        - Siempre y cuando se pueda utilizar SVG en vez de imágenes
 
 
 # Getting Started 
